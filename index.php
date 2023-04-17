@@ -16,7 +16,7 @@
     <div class="wrapper">
         <div class="container">
             <div class="logo">
-                <img src="assets/logo.png" alt="HINT POS Logo">
+                <img src="assets/logo.png" alt="HINT POS LOGO">
             </div>
             <h2 class="title-login">LOGIN</h2>
             <form action="dashboard.php" method="post">
