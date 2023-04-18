@@ -18,10 +18,10 @@ if ($result->num_rows > 0) {
                 $_SESSION["login_db"] = $usernamefromdb;
                 header('Location: dashboard.php');
             } else {
-                header('Location: main.php');
+                header('Location: index.php');
             }
         } else {
-            header('Location: main.php');
+            header('Location: index.php');
         }
     }
 } else {
