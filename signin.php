@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/signin_style.css">
 
-    <title>HINT POS System | DASHBOARD</title>
+    <title>HINT POS System | SIGN IN</title>
 </head>
 
 <body>
+    <div class="topnav">
+        <button class="back-btn"><i class="fa fa-chevron-left"></i></button>
+    </div>
     <div class="wrapper">
         <div class="container">
             <div class="logo">
@@ -28,11 +32,8 @@
                 <div class="id-number">
                     <input type="text" name="id-number" id="id-number" placeholder="ID Number">
                 </div>
-                <button name="submit" type="submit" class="login_btn">Login</button>
+                <button name="submit" type="submit" class="signin_btn">Sign In</button>
             </form>
-            <div class="link">
-                <a href="#">Forget password?</a> or <a href="#">Sign up</a>
-            </div>
         </div>
     </div>
 </body>

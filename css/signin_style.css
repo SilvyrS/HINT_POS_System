@@ -9,6 +9,7 @@ body{
     background-image: url('../assets/sign_in_bg.png');
     background-repeat: no-repeat;
     background-size:cover;
+    background-attachment: fixed;
     overflow: hidden;
 }
 
@@ -23,32 +24,31 @@ body{
     border-radius: 20px;
 }
 
-/*.logo{
-    text-align: center;
-    position: absolute;
-    top: -20px; 
-    left: 125px;   
-}*/
+.logo{
+    text-align: center; 
+}
 
 .logo img{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     position: absolute;
-    top: -20px; 
-    left: 140px;
+    top: 10px;
+    left: 135px;
 }
 
 .container{
-    margin: 30px 30px;
-    border: solid #FFC700 2px;
-    border-radius: 10px;
+    text-align: center;
+    margin: 30px;
     padding: 50px 20px;
+    border: solid black 2px;
+    border-radius: 0;
     box-sizing: border-box;
 }
 
 .title-login{
     text-align: center;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 .title-login h2{
     margin-bottom: 20px; 
@@ -70,35 +70,30 @@ body{
     box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
 }
 
-.login_btn {
+.signin_btn {
     box-shadow: none;
-    width: 100%;
+    width: 60%;
     height: 40px;
-    background-color: #A9E2FB;
-    color: #3B5171;
-    border: solid #2577F2 1px;
+    background-color: #FFC700;
+    color: black;
+    border: solid #FFC700 1px;
     border-radius: 25px;
     box-shadow: 3px 3px 3px #b1b1b1,
         -3px -3px 3px #fff;
     letter-spacing: 1.3px;
-    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
-.login_btn:hover {
-    background-color: #FFC700;
+.signin_btn:hover {
+    background-color: #ffffff;
 }
 
-.container .link {
-    text-align: center;
-    text-decoration: none;
-    font-size: 1rem;
+.back-btn{
+    position: absolute;
+    inset: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff .5;
+    border: none;
+    border-radius: 10px;
 }
-
-.container a{
-    color: #FF4D00;
-}
-
-.container a:hover {
-    color: #FFC700;
-}
-

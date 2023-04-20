@@ -9,6 +9,7 @@ body{
     background-image: url('../assets/Login_bg.jpg');
     background-repeat: no-repeat;
     background-size:cover;
+    background-attachment: fixed;
     overflow: hidden;
 }
 
@@ -24,16 +25,12 @@ body{
 }
 
 .logo{
-    text-align: center;
-    position: absolute;
-    top: -20px; 
-    left: 125px;   
+    text-align: center;  
 }
 
 .logo img{
     width: 70px;
     height: 70px;
-    
 }
 
 .container{

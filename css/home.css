@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+.topnav .logo img{
+    text-align: center;
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+  
+.topnav .topleft a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+.topnav a.active {
+    color: #FFC700;
+    text-decoration: underline 2px;
+}
+
+.topright{
+    float: right;
+}
+
+.topnav .topright a{
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #f2f2f2;
+    float: left;
+}
+
+.menu-btn{
+    background-color: transparent;
+    padding: 14px 16px;
+    float: right;
+}
+.menu-btn i{
+    font-size: 17px;
+    align-items: center;
+    color: #ffffff;
+}
+
+.receipt, .product{
+    padding: 10px;
+    margin: 5px;
+    float: left;
+    background-color: grey;
+}
+
+.section {
+    display: flex;
+  }
+  
+.receipt{
+    width: 30%;
+}
+.receipt p{
+    font-weight: bold;
+}
+
+.product {
+    width: 70%;
+}
+.product .toprow{
+    display: flex;
+}
+.product .toprow p{
+    float: left;
+}
+.product .toprow .search{
+    float: right;
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 17px;
+}
+
+.quantity{
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    float: right;
+}
+.quantity input{
+    padding: 5px;
+    width: 100px;
+}
+
