@@ -29,7 +29,7 @@
                 <button name="submit" type="submit" class="login_btn">Login</button>
             </form>
             <div class="link">
-                <a href="#">Forget password?</a> or <a href="#">Sign up</a>
+                <a href="#">Forget password?</a> or <a href="signin.php">Sign up</a>
             </div>
         </div>
     </div>

@@ -14,7 +14,7 @@
 
 <body>
     <div class="topnav">
-        <button class="back-btn"><a href="index.php"><i class="fa fa-chevron-left"></i></a></button>
+        <a href="index.php"><button class="back-btn"><i class="fa fa-chevron-left"></i></button></a>
     </div>
     <div class="wrapper">
         <div class="container">
