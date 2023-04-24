@@ -19,7 +19,7 @@
                 <img src="assets/logo.png" alt="HINT POS LOGO">
             </div>
             <h2 class="title-login">LOGIN</h2>
-            <form action="dashboard.php" method="post">
+            <form action="home.php" method="post">
                 <div class="username">
                     <input type="text" name="username" id="userName" placeholder="Username">
                 </div>

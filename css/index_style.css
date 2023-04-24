@@ -31,6 +31,9 @@ body{
 .logo img{
     width: 70px;
     height: 70px;
+    position: absolute;
+    top: -15px;
+    left: 130px;
 }
 
 .container{

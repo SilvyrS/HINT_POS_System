@@ -29,17 +29,14 @@ body{
 }
 
 .logo img{
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    top: 10px;
-    left: 135px;
+    width: 70px;
+    height: 70px;
 }
 
 .container{
     text-align: center;
     margin: 30px;
-    padding: 50px 20px;
+    padding: 20px 20px;
     border: solid black 2px;
     border-radius: 0;
     box-sizing: border-box;
@@ -88,7 +85,7 @@ body{
     background-color: #ffffff;
 }
 
-.back-btn{
+.back-btn {
     position: absolute;
     inset: 20px;
     width: 50px;
@@ -96,4 +93,9 @@ body{
     background-color: #ffffff .5;
     border: none;
     border-radius: 10px;
+    font-size: 24px;
+}
+.back-btn:hover{
+    background-color: #FFC700;
+    cursor: pointer;
 }
