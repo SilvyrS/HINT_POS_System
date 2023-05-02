@@ -22,15 +22,15 @@
                 <img src="assets/logo.png" alt="HINT POS LOGO">
             </div>
             <h2 class="title-login">SIGN IN</h2>
-            <form action="dashboard.php" method="post">
+            <form action="index.php" method="post">
                 <div class="email">
                     <input type="email" name="email" id="email" placeholder="Email Address">
                 </div>
                 <div class="username">
                     <input type="text" name="username" id="userName" placeholder="Username">
                 </div>
-                <div class="id-number">
-                    <input type="text" name="id-number" id="id-number" placeholder="ID Number">
+                <div class="password">
+                    <input type="text" name="password" id="password" placeholder="Password">
                 </div>
                 <button name="submit" type="submit" class="signin_btn">Sign In</button>
             </form>

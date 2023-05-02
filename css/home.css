@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    background-color: white;
+    background-color: #d9d9d9;
     font-family: Arial, Helvetica, sans-serif;
   }
   
@@ -64,11 +64,97 @@ body {
     color: #ffffff;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #FFC700;
+  width: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #FFC700;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-body {
+  padding: 2px 16px;
+  text-align: center;
+}
+.modal-body a{
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+}
+.modal-body hr{
+  color: #FFC700;
+  margin: 10px;
+}
+
+.modal-body a{
+  margin: 10px;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: none;
+}
+
+.modal-body a:hover{
+  color: #FFC700;
+}
+
+
+
+
 .receipt, .product{
     padding: 10px;
     margin: 5px;
     float: left;
-    background-color: grey;
+    background-color: #ffffff;
+    
 }
 
 .section {
@@ -77,36 +163,67 @@ body {
   
 .receipt{
     width: 30%;
+    display: block;
+    padding: 15px;
 }
 .receipt p{
     font-weight: bold;
+    margin-bottom: 10px;
+}
+.receipt hr{
+  border: 1px solid #FFC700;
+  width: 100%;
 }
 
-.product {
-    width: 70%;
+.selected-product{
+  
 }
-.product .toprow{
-    display: flex;
-}
-.product .toprow p{
-    float: left;
-}
-.product .toprow .search{
-    float: right;
-    background-color: transparent;
-    color: black;
-    border: none;
-    font-size: 17px;
-}
-
 .quantity{
-    font-weight: bold;
-    align-items: center;
     display: flex;
+    text-align: center;
     float: right;
+    margin: 10px 0 10px;
+}
+.quantity p{
+  font-weight: 700;
+  font-size: 16px;
 }
 .quantity input{
-    padding: 5px;
-    width: 100px;
+  padding: 3px;
+  font-size: 16px;
+  width: 100px;
+  background-color: #d9d9d9;
+  border: none;
+  font-weight: 500;
+  text-align: center;
 }
 
+.blank{
+  height: 250px;
+  margin-top: 10px;
+  background-color: #d9d9d9;
+  padding: 10px;
+}
+.blank hr{
+  border: 1px dashed #000000;
+}
+
+
+
+.product {
+  width: 70%;
+  border: 2px solid #FFC700;
+}
+.product .toprow{
+  display: flex;
+}
+.product .toprow p{
+  float: left;
+}
+.product .toprow .search{
+  float: right;
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-size: 17px;
+}

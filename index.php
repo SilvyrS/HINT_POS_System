@@ -19,12 +19,12 @@
                 <img src="assets/logo.png" alt="HINT POS LOGO">
             </div>
             <h2 class="title-login">LOGIN</h2>
-            <form action="home.php" method="post">
+            <form action="login_connect.php" method="post">
                 <div class="username">
-                    <input type="text" name="username" id="userName" placeholder="Username">
+                    <input type="text" name="uname" id="uname" placeholder="Username" required>
                 </div>
                 <div class="password">
-                    <input type="password" name="password" id="pwd" placeholder="Password">
+                    <input type="password" name="pword" id="pword" placeholder="Password" required>
                 </div>
                 <button name="submit" type="submit" class="login_btn">Login</button>
             </form>
