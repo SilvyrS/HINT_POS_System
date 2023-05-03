@@ -187,9 +187,7 @@ body {
   width: 100%;
 }
 
-.selected-product{
-  
-}
+
 .quantity{
     display: flex;
     text-align: center;
@@ -220,22 +218,39 @@ body {
   border: 1px dashed #000000;
 }
 
-
-
 .product {
   width: 70%;
   border: 2px solid #FFC700;
 }
+
 .product .toprow{
   display: flex;
+  justify-content: space-between;
+  margin: 10px;
 }
 .product .toprow p{
-  float: left;
+  font-size: 20px;
 }
 .product .toprow .search{
   float: right;
   background-color: transparent;
   color: black;
   border: none;
-  font-size: 17px;
+  font-size: 20px;
 }
+.product .toprow .search:hover{
+  color: #FFC700;
+  cursor: pointer;
+}
+
+.product hr{
+  border-top: 2px solid #FFC700;
+  
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+

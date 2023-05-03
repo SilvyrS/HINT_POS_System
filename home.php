@@ -72,7 +72,23 @@
                 <button class="search"><i class="fa fa-search"></i></button>
             </div>
             <hr>
-            <div class="product-card">
+            <div class="product-cards">
+                <div class="columns">
+                    <div class="column">
+                        <button class="modal-open" data-modal="modal1">
+                            <img src="assets/steelpipe.jpg" alt="steelpipe" class="img1">
+                            <div class="product-name">
+                                <p>Steelpipe</p>
+                                <p>6" 17kg</p>
+                            </div>
+
+                            <p>Price</p>
+                        </button>
+                    </div>
+                    <div class="column">
+                        /// Column 2: Put any relevant content here ///
+                    </div>
+                </div>
 
             </div>
         </div>
