@@ -23,8 +23,8 @@
         </div>
 
         <div class="topright">
-            <a href="#admin">Admin</a>
-            <button id="myBtn" class="menu-btn"><i class="fa fa-ellipsis-v"></i></button>
+            <a class="admin" href="">Admin</a>
+            <a id="myBtn" class="menu-btn"><i class="fa fa-ellipsis-v"></i></a>
         </div>
     </div>
 
@@ -61,7 +61,7 @@
             </div>
             <div class="payment-section">
                 <div class="payment-method">
-                    
+
                 </div>
             </div>
         </div>
