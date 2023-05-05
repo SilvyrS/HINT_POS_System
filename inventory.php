@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/modal_menu_content.css">
     <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/inventory_style.css">
 
     <title>Document</title>
 </head>
@@ -49,5 +50,24 @@
 
     <script src="js/modal-menu.js"></script>
 </body>
+
+<div class = "Inventory">
+        <div class="table">
+            <table>
+                <tr>
+                    <th> </th>
+                    <th> Item </th>
+                    <th> Cost </th>
+                    <th> Quantity </th>
+                    <th> Options </th>
+                    <tr>
+                        <td><img class="tableimage" src="assets/Itemfill.jpg" alt="Placeholder"></td>
+                        <td> Item 1 </td>
+                        <td class="Costcol"> Apple </td>
+                        <td> Take care </td>
+                        <td>> Option 1 Option 2 </td>
+                    </tr>
+    </div>
+</div>
 
 </html>
