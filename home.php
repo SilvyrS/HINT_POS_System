@@ -7,27 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/modal_menu_content.css">
+    <link rel="stylesheet" href="css/navBar.css">
 
     <title>HINT POS | HOME</title>
 </head>
 
 <body>
+    <!--Navigation bar-->
     <div class="topnav">
         <div class="logo">
             <a href="home.php"><img src="assets/logo.png" alt="HINT Logo" class="logo"></a>
         </div>
         <div class="topleft">
             <a class="active" href="#home">Home</a>
-            <a href="#news">Sales Report</a>
-            <a href="#contact">Inventory</a>
+            <a href="">Sales Report</a>
+            <a href="inventory.php">Inventory</a>
         </div>
 
         <div class="topright">
             <a class="admin" href="">Admin</a>
-            <a id="myBtn" class="menu-btn"><i class="fa fa-ellipsis-v"></i></a>
+            <button id="myBtn" class="menu-btn"><i class="fa fa-ellipsis-v"></i></button>
         </div>
     </div>
 
+    <!--Modal Codes-->
     <div id="myModal" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
@@ -43,6 +47,7 @@
 
     </div>
 
+    <!--Reciept section-->
     <div class="section">
         <div class="receipt">
             <div class="selected-product">
@@ -66,6 +71,8 @@
             </div>
         </div>
 
+
+        <!--Products Section-->
         <div class="product">
             <div class="toprow">
                 <p>Select a Product</p>
@@ -73,7 +80,7 @@
             </div>
             <hr>
             <div class="product-cards">
-                <div class="columns">
+                <div class="row">
                     <div class="column">
                         <button class="modal-open" data-modal="modal1">
                             <img src="assets/steelpipe.jpg" alt="steelpipe" class="product-img">
@@ -96,6 +103,10 @@
                             <p>Price</p>
                         </button>
                     </div>
+
+                </div>
+
+                <div class="row">
                     <div class="column">
                         <button class="modal-open" data-modal="modal1">
                             <img src="assets/steelpipe.jpg" alt="steelpipe" class="product-img">
@@ -118,12 +129,13 @@
                             <p>Price</p>
                         </button>
                     </div>
+
                 </div>
 
             </div>
         </div>
     </div>
-    <script src="js/home_script.js"></script>
+    <script src="js/modal_menu.js"></script>
 </body>
 
 </html>
