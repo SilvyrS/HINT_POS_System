@@ -48,26 +48,40 @@
 
     </div>
 
-    <script src="js/modal-menu.js"></script>
-</body>
+    <script src="js/modal_menu.js"></script> 
 
-<div class = "Inventory">
+    <!--//Table-->
+    <div class = "Inventory">
         <div class="table">
             <table>
-                <tr>
+                <tr class ="rowhead">
                     <th> </th>
                     <th> Item </th>
                     <th> Cost </th>
                     <th> Quantity </th>
                     <th> Options </th>
+                </tr>
                     <tr>
                         <td><img class="tableimage" src="assets/Itemfill.jpg" alt="Placeholder"></td>
                         <td> Item 1 </td>
-                        <td class="Costcol"> Apple </td>
-                        <td> Take care </td>
-                        <td>> Option 1 Option 2 </td>
+                        <td class="Costcol"> 00.0 </td>
+                        <td> 20 </td>
+                        <td>
+                        <button id="myBtn">
+                            <img class="addremove" src="assets/add_item.png" alt="add logo">
+                        </button>
+                        <button id="myBtn">
+                        <img class="addremove" src="assets/remove_item.png" alt="remove logo">
+                        </button>
+                    </td>
                     </tr>
     </div>
 </div>
+
+<script src="js/inventory_modal.js"></script>
+
+</body>
+
+
 
 </html>
