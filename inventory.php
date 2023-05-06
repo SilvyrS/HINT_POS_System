@@ -49,7 +49,7 @@
     </div>
 
     <script src="js/modal_menu.js"></script> 
-
+    
     <!--//Table-->
     <div class = "Inventory">
         <div class="table">
@@ -67,14 +67,23 @@
                         <td class="Costcol"> 00.0 </td>
                         <td> 20 </td>
                         <td>
-                        <button id="myBtn">
+                        <button id="myBtnad">
                             <img class="addremove" src="assets/add_item.png" alt="add logo">
                         </button>
-                        <button id="myBtn">
+                        <button id="myBtnad">
                         <img class="addremove" src="assets/remove_item.png" alt="remove logo">
                         </button>
                     </td>
                     </tr>
+    </div>
+</div>
+</div>
+
+   <!-- Modal for Inventory -->
+   <div id="invModal" class="winModal">
+    <div class="inv-modal">
+        <span class="shut">&times;</span>
+        <p> testing </p>
     </div>
 </div>
 
