@@ -81,7 +81,15 @@
    <div id="QuantityWindow" class="quantityMode">
     <div class="boxQuant">
         <span class="disable">x</span>
-        <p> testing </p>
+        <p> Item Name </p>
+        <br>
+        <p> Enter Quantity </p>
+        <br>
+        <form>
+            <input type="text" id="quantype" name="quantype"><br>
+</form>
+<br>
+<span class="addquan"> Add </span> <span class="cancel"> Cancel </span>
     </div>
 </div>
 
