@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/modal_menu_content.css">
     <link rel="stylesheet" href="css/navBar.css">
     <link rel="stylesheet" href="css/inventory_style.css">
+    <link rel="stylesheet" href="css/modal_inventory.css">
 
     <title>Document</title>
 </head>
@@ -51,7 +52,6 @@
     <script src="js/modal_menu.js"></script> 
     
     <!--//Table-->
-    <div class = "Inventory">
         <div class="table">
             <table>
                 <tr class ="rowhead">
@@ -67,7 +67,7 @@
                         <td class="Costcol"> 00.0 </td>
                         <td> 20 </td>
                         <td>
-                        <button id="myBtnad">
+                        <button id="addbuttn">
                             <img class="addremove" src="assets/add_item.png" alt="add logo">
                         </button>
                         <button id="myBtnad">
@@ -76,13 +76,11 @@
                     </td>
                     </tr>
     </div>
-</div>
-</div>
 
    <!-- Modal for Inventory -->
-   <div id="invModal" class="winModal">
-    <div class="inv-modal">
-        <span class="shut">&times;</span>
+   <div id="QuantityWindow" class="quantityMode">
+    <div class="boxQuant">
+        <span class="disable">x</span>
         <p> testing </p>
     </div>
 </div>

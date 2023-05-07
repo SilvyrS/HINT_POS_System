@@ -1,24 +1,22 @@
-// Get the modal variable
-var modan = document.getElementById("invModal");
+//get the modal id
+var quanbar = document.getElementById("QuantityWindow");
 
-//The button for adding window
-var butn = document.getElementById("myBtnad");
+//button id
+var select = document.getElementById("addbuttn");
 
-//the span element for closing
-var ex = document.getElementsByClassName("shut")[0];
+//get the span
+var exit = document.getElementsByClassName("disable")[0];
 
-//opening the modal by clicking the button
-butn.onclick = function() {
-    modan.style.display = "block"
+select.onclick = function() {
+    quanbar.style.display = "block";
 }
 
-ex.onclick = function() {
-    modan.style.display = "none";
+exit.onclick = function() {
+    quanbar.style.display = "none";
 }
 
-//clicking outside of the modal closing it
 window.onclick = function(event) {
-    if (event.target == modan) {
-        modan.style.display = "none";
+    if (event.target == quanbar) {
+        quanbar.style.display = "none";
     }
 }
