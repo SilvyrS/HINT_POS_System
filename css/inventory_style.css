@@ -11,14 +11,17 @@ body {
 
 td {
     height: auto;
-    width: auto;
+    width: 150px;
     text-align: center;
     padding: 5px;
     
 }
 
-.rowhead {
-    border-bottom: 2px solid black;
+th {
+    width: 150px;
+    padding-left: 0px;
+    text-align: center;
+
 }
 
 table {
@@ -42,7 +45,11 @@ table {
     height: 50px;
 }
 
-button {
+.addremove:active {
+    background-color: rgb(167, 167, 167);
+}
+
+/*button {
     border: none;
     cursor: pointer;
     background-color: transparent;

@@ -1,3 +1,7 @@
+<?php 
+include "db/inv_connection.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,10 +54,48 @@
     </div>
 
     <script src="js/modal_menu.js"></script> 
+
+    <?php 
+       $sql = "SELECT * FROM inventory_tb";
+       
+       $result = mysqli_query($conn, $sql);
+       ?>
+
+       <div class = "table">
+        <table>
+            <thead>
+                <tr class = "rowhead">
+                    <th> </th>
+                    <th> Item </th>
+                    <th> Cost </th>
+                    <th> Quantity </th>
+                    <th> Options </th>
+                </tr>
+                </thead>
+
+    <?php
+       if(mysqli_num_rows($result) > 0) {
+            while($row = mysqli_fetch_assoc($result)) {
+                ?>
+                <tbody id="button-parent">
+                    <tr>
+                    <td><img class="tableimage" src="assets/Itemfill.jpg" alt="Placeholder"></td>
+                    <td> <?php echo $row['item_Name'] ?> </td>
+                    <td> <?php echo $row['item_Cost'] ?> </td>
+                    <td> <?php echo $row['item_Quantity'] ?> </td>
+                    <td>
+                    <a href="#QuantityWindow?id=<?php echo $row['id'];?>" id="addremove"><img src="assets/add_item.png" alt="add item">
+                    </td>
+
+            <?php } ?>
+      <?php }
+    ?>
     
-    <!--//Table-->
-        <div class="table">
+    <!-- //Table w/ connection-->
+
+        <!--<div class="table">
             <table>
+                <thead>
                 <tr class ="rowhead">
                     <th> </th>
                     <th> Item </th>
@@ -61,6 +103,8 @@
                     <th> Quantity </th>
                     <th> Options </th>
                 </tr>
+                </thead>
+                <tbody>
                     <tr>
                         <td><img class="tableimage" src="assets/Itemfill.jpg" alt="Placeholder"></td>
                         <td> Item 1 </td>
@@ -75,9 +119,25 @@
                         </button>
                     </td>
                     </tr>
-    </div>
+</tbody>
+    </div> -->
 
    <!-- Modal for Inventory -->
+<?php 
+include "db/inv_connection.php";
+
+$id = validate($_POST['id']);
+$item_Quantity = validate($_POST['item_Quantity']);
+
+if(count($_POST)>0) {
+    mysqli_query($conn, "UPDATE inventory_tb SET quantype='" . $_POST['item_Quantity'] . "'WHERE id='" . $_POST['id'] . "'");
+    $message = "Quantity Changed";
+}
+
+$result = mysqli_query($conn,"SELECT * FROM inventory_tb WHERE id='" . $_GET['id'] . "'");
+$row= mysqli_fetch_array($result);
+?>
+
    <div id="QuantityWindow" class="quantityMode">
     <div class="boxQuant">
         <span class="disable">x</span>
@@ -85,18 +145,16 @@
         <br>
         <p> Enter Quantity </p>
         <br>
-        <form>
-            <input type="text" id="quantype" name="quantype"><br>
-</form>
+        <form name="changeQuant" method="post" action="">
+            <div><?php if(isset($message)) { echo $message;} ?>
+            <input type="number" id="quantype" name="quantype" value="<?php echo $row['item_Quantity'];?>"><br>
 <br>
-<span class="addquan"> Add </span> <span class="cancel"> Cancel </span>
+<input type="submit">
+</form>
     </div>
 </div>
 
 <script src="js/inventory_modal.js"></script>
 
 </body>
-
-
-
 </html>
