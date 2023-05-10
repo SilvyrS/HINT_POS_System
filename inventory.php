@@ -84,7 +84,7 @@ include "db/inv_connection.php";
                     <td> <?php echo $row['item_Cost'] ?> </td>
                     <td> <?php echo $row['item_Quantity'] ?> </td>
                     <td>
-                    <a href="#QuantityWindow?id=<?php echo $row['id'];?>" id="addremove"><img src="assets/add_item.png" alt="add item">
+                    <a href="inventory_form.php?id=<?php echo $row['item_id'];?>" id="addremove"><img src="assets/add_item.png" alt="add item">
                     </td>
 
             <?php } ?>
@@ -123,22 +123,8 @@ include "db/inv_connection.php";
     </div> -->
 
    <!-- Modal for Inventory -->
-<?php 
-include "db/inv_connection.php";
 
-$id = validate($_POST['id']);
-$item_Quantity = validate($_POST['item_Quantity']);
-
-if(count($_POST)>0) {
-    mysqli_query($conn, "UPDATE inventory_tb SET quantype='" . $_POST['item_Quantity'] . "'WHERE id='" . $_POST['id'] . "'");
-    $message = "Quantity Changed";
-}
-
-$result = mysqli_query($conn,"SELECT * FROM inventory_tb WHERE id='" . $_GET['id'] . "'");
-$row= mysqli_fetch_array($result);
-?>
-
-   <div id="QuantityWindow" class="quantityMode">
+<!--    <div id="QuantityWindow" class="quantityMode">
     <div class="boxQuant">
         <span class="disable">x</span>
         <p> Item Name </p>
@@ -154,7 +140,7 @@ $row= mysqli_fetch_array($result);
     </div>
 </div>
 
-<script src="js/inventory_modal.js"></script>
+<script src="js/inventory_modal.js"></script> -->
 
 </body>
 </html>
